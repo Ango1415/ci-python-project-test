@@ -21,6 +21,6 @@ jobs:
               # Optional: install tox-gh-actions for better integration with GitHub Actions
               pip install tox-gh-actions
       - name: Run Tox
-        run: tox -e py${{ replace(matrix.python-version, '.', '') }} # Adjust to your tox environment names
+        run: tox -e py # Adjust to your tox environment names
             # Alternatively, if using tox-gh-actions:
             # run: tox
